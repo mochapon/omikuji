@@ -16,4 +16,14 @@
       btn.textContent = '凶'; // 50%
     }
   });
+
+  window.onload = function(){
+    const dateObj = new Date();
+    const y = dateObj.getFullYear();
+    const m = dateObj.getMonth() + 1;
+    const d = dateObj.getDate();
+    const yb = "日月火水木金土".charAt(dateObj.getDay());
+    document.getElementById("currentDate").innerHTML = y+"年"+m+"月"+d+"日("+yb+")";
+  }
+
 }

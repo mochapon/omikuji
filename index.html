@@ -5,21 +5,30 @@
     <title>おみくじ</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="おみくじサイトです。">
+    <meta name="description" content="おみくじを引くサイトです。">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="webclip152.png"/>
     <link rel="stylesheet" href="css/style.css">
     
   </head>
+
   <body>
     <header>
-      <h1>
-        おみくじアプリ
-      </h1>
-      <p>
-        今日の運勢を占ってみよう！<br>
-      </p>
+      <div class="container">
+        <div  class="icon">
+          <img src="webclip152.png" alt="おみくじアプリのアイコン">
+        </div>
+        <div class="info">
+          <h1>おみくじアプリ</h1>
+          <p>おみくじを引いてみよう！</p>
+        </div>
+      </div>
     </header>
+
+    <div class="kyou">
+      <span id="currentDate"></span>の運勢
+    </div>
+
     <div id="btn">?</div>
 
     <section class="link">
